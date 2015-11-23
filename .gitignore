@@ -1,0 +1,20 @@
+# node modules
+/node_modules
+
+# jspm packages
+/src/jspm_packages
+
+# typings
+/src/typings/*
+!/src/typings/test.d.ts
+
+# build
+/build
+/build-ut
+
+# coverage
+/coverage
+
+# idea files
+/.idea
+

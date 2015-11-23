@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ng-ts-jspm-boilerplate</title>
+
+    <!-- css files -->
+    <link rel="stylesheet/less" type="text/css" href="styles/main.less" />
+    <!-- css files -->
+</head>
+<body>
+
+    <h1 id="welcome-message">Angular + TypeScript + Less + ES6 test</h1>
+
+    <div ng-controller="DashboardCtrl as db">
+        <h2>Hello {{ db.name }}</h2>
+        <p>Status: {{ db.status }}. <a href="#" ng-click="db.loadConfigJs()">Click to update</a></p>
+    </div>
+
+    <div ng-controller="DashboardCtrl2 as db2">
+        <h2>Hello {{ db2.name }}</h2>
+        <p>Status: {{ db2.status }}. <a href="#" ng-click="db2.loadConfigJs()">Click to update</a></p>
+    </div>
+
+    <!-- js files -->
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+
+        // application entry point
+        System.import('angular')
+            .then(function () {
+                console.log('Angular loaded');
+                return System.import('app/index.ts');
+            }).then(function () {
+                console.log('App loaded');
+            }).catch(function () {
+                console.log('Fail!');
+            });
+
+        // on-the-fly processing less files
+        System.import('less');
+    </script>
+    <!-- js files -->
+</body>
+</html>

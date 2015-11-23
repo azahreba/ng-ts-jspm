@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "class-name": true,
+    "curly": true,
+    "interface-name": true,
+    "no-duplicate-key": true,
+    "no-duplicate-variable": true,
+    "no-shadowed-variable": true,
+    "no-empty": true,
+    "no-unused-variable": true,
+    "no-use-before-declare": true,
+    "triple-equals": true
+  }
+}

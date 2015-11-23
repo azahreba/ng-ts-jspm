@@ -1,0 +1,61 @@
+{
+  "name": "ng-ts-jspm-boilerplate",
+  "version": "0.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "jspm install && tsd install",
+    "test": "gulp e2e",
+    "start": "gulp lr"
+  },
+  "contributors": [
+    {
+      "name": "Artur Barcicki",
+      "email": "artur.barcicki@gft.com"
+    },
+    {
+      "name": "Konstantin Kitmanov",
+      "email": "konstantin.kitmanov@gft.com"
+    }
+  ],
+  "jspm": {
+    "directories": {
+      "baseURL": "src"
+    },
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.7",
+      "angular-mocks": "github:angular/bower-angular-mocks@^1.4.7",
+      "jquery": "github:components/jquery@^2.1.4",
+      "less": "github:aaike/jspm-less-plugin@^0.0.5",
+      "ts": "github:frankwallis/plugin-typescript@^2.0.17"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3",
+    "gulp-protractor": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^3.3.1",
+    "gulp-typescript": "^2.9.2",
+    "gulp-util": "^3.0.6",
+    "http-server": "^0.8.5",
+    "istanbul": "git://github.com/gotwarlost/istanbul.git#source-map",
+    "jasmine-core": "^2.3.4",
+    "jspm": "^0.16.12",
+    "karma": "^0.13.10",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-coverage": "^0.5.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-jspm": "^2.0.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "rimraf": "^2.4.3",
+    "systemjs-builder": "^0.14.8",
+    "temp": "^0.8.3"
+  }
+}
